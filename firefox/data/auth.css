@@ -1,0 +1,23 @@
+  * {
+  	box-sizing: box-model;
+  	overflow:hidden;
+  	white-space: nowrap;
+  }
+.wrapper {
+  display: flex;
+}
+section {
+  height: 100%;
+  background: #eee;
+  transition: 1s all;
+  width:0%;
+}
+body.signed_out section.signed_out,
+body.signing_in section.signing_in,
+body.signed_in section.signed_in {
+	width: 100%;
+}
+
+img {
+  height: 1em;
+}

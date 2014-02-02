@@ -12,6 +12,7 @@ exports.getTraktId = function(urlstring){
   const url = URL(urlstring);
   switch (url.host) {
     case "movies.netflix.com":
+    case "www.netflix.com":
       var params = querystring.parse(url.search.substring(1));
       if (params.hasOwnProperty('movieid')) {
         var movieid = params.movieid;
